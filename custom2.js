@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(function() {
 	// ---- Another tests ----
 	// Misc
 	$("#mydiv > div:first").addClass("blue");

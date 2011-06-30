@@ -13,9 +13,13 @@ if(isset($_REQUEST["rating"])) {
 	$storedRatings = unserialize(file_get_contents(STORE));
 	$storedRatings[] = $rating;
 	put_contents(STORE, serialize($storedRatings));
-	$average = round(array_sum($storedRatings) / count($storedRatings), 2);
 	$count = count($storedRatings);
-	$xml = "<ratings><average>$average</average><count>$count</count></ratings>";
+	$average = round(array_sum($storedRatings) / $count, 4);
+	$xml = "<ratings>
+				<rating>$rating</rating>
+				<average>$average</average>
+				<count>$count</count>
+			</ratings>";
 	header('Content-type: text/xml'); 
 	echo $xml;
 }
