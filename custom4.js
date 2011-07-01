@@ -1,6 +1,6 @@
 $(function () {
 	
-	$("#sortedtable").tablesorter();
+	$("#sortedtable").tablesorter({ widgets: ['zebra'] });
 
 	$(".question").click(function () {
 		var next = $(this).next()
