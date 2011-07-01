@@ -1,0 +1,84 @@
+<html>
+<head>
+	<title>Animations with jQuery</title>
+	<script src="jquery.js" type="text/javascript"></script>
+	<script src="jquery.tablesorter.js" type="text/javascript"></script>
+	<script src="custom4.js" type="text/javascript"></script>
+	<style type="text/css">
+		body {
+			font-family: Verdana;
+			font-size: 11px;
+		}
+		table {
+			font-family: Verdana;
+			font-size: 11px;
+		}
+		.answer {
+			display: none;
+			background: gray;
+			width: 50%;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h3>The 5 Most Important Questions in the History</h3>
+		<a href="#" class="question">1. What Makes No. 2 Pencils So Darn Special?</a>
+		<div class="answer">
+			Little. Yellow. Identical. The No. 2 is definitely No. 1 in the pencil market. It’s a staple in schools and workplaces everywhere, and the required writing utensil for Scantron® tests across the globe. But is it really that great of a pencil? You bet your bippy.
+			No. 2’s use medium weight graphite, which makes them the ideal pencils for general writing. 18th-century French pencil maker Nicolas-Jacques Conté created the number system based on a pencil’s hardness (the higher the number, the harder the graphite), and we’ve been using it ever since.
+			But let’s not forget the other numbers of pencils out there. No. 1’s are made with soft graphite and tend to smudge, and are often used to record bowling scores. No. 3’s and above indicate harder pencils that are most often used for drafting, when you need a sharp, strong point.
+		</div>
+		<br />
+		<a href="#" class="question">2. Who’s That AOL Guy Who Eerily Knows When You’ve Got Mail?</a>
+		<div class="answer">
+			Meet Elwood Edwards, the man behind the message. Approximately 63 million times a day, Edwards’ voice greets AOL customers to let them know "you’ve got mail."
+			Edwards’ career as a disembodied cyber presence stretches back to 1989 when his wife overheard her boss at Quantum Computer Services discussing adding a voice to its online service, Q-Link. At the time, Elwood did voice-overs for radio and television, so his wife suggested him for the company’s new program. Not long after, Quantum changed its name to America Online and premiered AOL 1.0, with Elwood speaking four phrases: "Welcome," "You’ve got mail," "File’s done," and "Goodbye." Through AOL’s numerous upgrades, one thing has remained the same: Elwood Edwards.
+			Today, his voice is so well known that he’s created a website where fans can order their own custom phrases. The site also includes pictures of Edwards, just in case you’re looking to put a face with that friendly voice you love so much.
+		</div>
+		<br />
+		<a href="#" class="question">3. Where Does Nougat Come From?</a>
+		<div class="answer">
+			Like falafel and the number "0," nougat is a product of Middle Eastern genius. Originally made from a mixture of honey, nuts, and spices, the basic recipe was transplanted to Greece where it lost the spices and gained the name "nugo."
+			Later cultural exchanges brought the treat to France, where it became "nougat," and the recipe switched from calling for ground walnuts to ground almonds. In 1650, the French made another change for the better, adding beaten egg whites and creating the fluffier, modern nougat texture. The first commercial nougat factory opened in Montelimar, France, in the late 18th century, and today, the area is renowned for its nougat, with about a dozen manufacturers producing the sugary treat.
+			As for its ugly American cousin – the nougat you’re probably familiar with from candy bars – it’s not "true nougat." The imitation stuff is chewier, less almond-y, and contains enough artificial preservatives to make a French candy-maker swoon.
+		</div>
+		<br />
+		<a href="#" class="question">4. Is There One Move That’s More Likely to Win a Game of Rock-Paper-Scissors?</a>
+		<div class="answer">
+			To answer this question, we turned to the archives of the World Rock-Paper-Scissors Society (seriously!), where we found that RPS players rely on strategy, not probability, to win. From the playground to the annual International World RPS Tournament (really, people, we’re not kidding), outwitting your opponent is job No. 1 for serious competitors.
+			According to the Society, one way to guess what hand someone will throw out is to know how many rounds they’ve won so far. Players who are in the lead will often use scissors, because it’s believed to symbolize aggression, while paper is used for a more subtle attack. Rock is usually a last resort, when players feel their strategies are failing. There are also techniques you can use to mask your move, such as cloaking, in which players will pretend to throw rock and then stick out two fingers at the last second to make scissors. In addition, the true professionals (who do exist) will use sets of three moves, called "gambits," to help them make their moves out of strategy, not reaction.
+			But that’s not all. The Society also keeps track of how common moves are, particularly as they relate to mentions of RPS in pop culture. For instance, after "The Simpsons" episode where Bart beats Lisa with rock and thinks to himself "Good old rock, nothing beats it," the Society recorded a .3 percent upswing in the use of rock.
+			But if you’re gonna play, be prepared to pay; RPS can be a dangerous sport. In the late 1980’s, Kenyan Mustafa Nwenge lost a match and the use of a finger when an overzealous opponent "cut his paper" a little too hard and crushed Nwenge’s finger ligaments.
+		</div>
+		<br />
+		<a href="#" class="question">5. Which Came First, the Can Opener or the Can?</a>
+		<div class="answer">
+			While the mental_floss staff is still working round the clock to figure out that blasted chicken/egg question, this one we can definitely answer.
+			In 1810, a British merchant named Peter Durand patented the tin can, making it possible for sterilized food to be preserved more effectively than was possible with breakable containers. The can were especially useful for long ocean voyages, where glass bottles were prone to breakage, and soon the British Navy was dining on canned veggies and meat.
+			So far, so good. But what Durand (and everybody else for that matter) forgot to invent was a way to open the cans. For almost 50 years, getting into your pork ‘n’ beans required the use of a hammer and a chisel. The first can opener was patented by American inventor Ezra Warner in 1858, but even that wasn’t particularly convenient. These early openers were stationed at the grocery store, and clerks did the honors. It wasn’t until 1870 that the first home can openers made an appearance.
+		</div>
+	</div>
+	
+	<div>
+		<h3>Using Table Sorter Plugin</h3>
+		<table id="sortedtable">
+			<tr>
+				<th>Id</th><th>Name</th><th>Date</th>
+			</tr>
+			<tr>
+				<td>1</td><td>Susana</td><td>01/01/2001</td>
+			</tr>
+			<tr>
+				<td>3</td><td>Marcos</td><td>06/04/2015</td>
+			</tr>
+			<tr>
+				<td>4</td><td>Lucrecia</td><td>06/04/2080</td>
+			</tr>
+			<tr>
+				<td>2</td><td>Daniel</td><td>01/02/2015</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
